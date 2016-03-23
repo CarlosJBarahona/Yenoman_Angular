@@ -1,0 +1,10 @@
+body{font-family: sans-serif;font-weight: 100;background: #ccc;}
+h1{text-align:  center;;color: #666; text-shadow: 0 2px 0 #fff;}
+.nombre{font-size: 18px}
+.curso{font-style: italic;font-size: 13px;text-align: left;}
+.wrapper{width: 650px;margin: 0 auto; box-shadow: 5px 5px 5px #555; background: #fff; border-radius: 15px; padding: 10px;}
+.contact-item{border-bottom: thin solid #ccc; padding: 10px}
+button{background: #080;color: #fff;padding: 5px 15px; border-radius: 5px; border: thin solid #060; margin: 0 auto}
+button:hover{background: #0A0}
+input{margin: 0 auto;}
+.cont-input{margin: 0 auto}
