@@ -1,0 +1,33 @@
+<html ng-app="cursos" >
+<head >
+	<meta charset="UTF-8">
+	<title>Video 3, 4, 5, 6, 7 </title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-controller="AlumnoCtrl">
+
+	<h1>Curso Alumnos</h1>
+	<div class="wrapper">
+		<div class="contact-item" ng-repeat="alumno in alumnos | orderBy: 'nombre' ">
+			<div class="nombre" > {{alumno.nombre}} - {{alumno.telefono}} </div>
+			<span  class="curso" > {{alumno.curso}} </span>
+		</div>
+	</div>
+
+	</br>
+
+	<center><button ng-click="ShowForm()" ng-hide="formVisibility" >Añadir Contacto</button></center>
+
+	<div class="wrapper" ng-show="formVisibility">
+		<h2>Añadir un Contacto</h2>
+		Nombre: <input type="text" ng-model="nuevoAlumno.nombre" >
+		Teléfono: <input type="text" ng-model="nuevoAlumno.telefono" >
+		Curso <input type="text" ng-model="nuevoAlumno.curso" >
+		<button ng-click="Save()">Guardar</button>
+	</div>
+	
+</body>
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/funciones.js"></script>
+</html>
